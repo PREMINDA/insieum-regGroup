@@ -1,0 +1,46 @@
+<mat-card class="card">
+  <mat-card-title>Registration Group form</mat-card-title>
+  <mat-card-content class="content">
+    <form class="form-set" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+      <div class="container">
+      <mat-form-field class="formfield" [color]="registrationGroupNumber?.valid && 'accent'">
+        <input class="input-field"
+        width="500px"
+        matInput
+        type="text"
+        placeholder="Group Number"
+        autocomplete="off"
+        formControlName="registrationGroupNumber"
+        >
+        <mat-error *ngIf="registrationGroupNumber?.invalid">
+          You must enter a registration Group Number
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="formfield" [color]="registrationGroupName?.valid && 'accent'">
+        <input
+        matInput
+        type="text"
+        placeholder="Group Name"
+        autocomplete="off"
+        formControlName="registrationGroupName"
+        >
+        <mat-error *ngIf="registrationGroupNumber?.invalid">
+          You must enter a registration Group Name
+        </mat-error>
+      </mat-form-field>
+      </div>
+
+      <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+    >
+      Submit
+    </button>
+
+    </form>
+
+  </mat-card-content>
+</mat-card>
+
