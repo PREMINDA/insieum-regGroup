@@ -2,7 +2,8 @@
 .container{
   display: flex;
   flex-direction: column;
-
+  width: 80%;
+  margin: auto;
 }
 
 button{
@@ -11,11 +12,14 @@ button{
   margin-right: 20px;
 }
 
-
+h2{
+  margin-top: 10px;
+  margin-left: 10px;
+}
 
 .data-cintainer{
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   align-self: center;
   overflow: hidden;
 }

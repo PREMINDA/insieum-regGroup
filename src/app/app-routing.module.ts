@@ -9,23 +9,7 @@ import { RegistrationGroupEditComponent } from './registration-group-edit/regist
 const routes: Routes = [
   {path:'',component:HomePageComponent},
   {
-    path:'registration-group',
-    component:RegistrationGroupPageComponent,
-    children:[
-      {
-        path:'form',
-        component:RegistrationFormComponent
-      },
-      {
-        path:'data',
-        component:RgistrationGroupDataComponent
-      },
-      {
-        path:'edit',
-        component:RegistrationGroupEditComponent
-      },
-    ]
-
+    path:'registration-group',loadChildren:()=>import('./registration/registration.module').then(m=>m.RegistrationModule),
   },
 
 ];

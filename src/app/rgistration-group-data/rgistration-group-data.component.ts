@@ -29,7 +29,6 @@ export class RgistrationGroupDataComponent implements OnInit {
   }
 
   onClick(id:any,group:any,name:any){
-    console.log(id," ",group," ",name);
     this.router.navigate(['registration-group/edit'],{state:{id:id,group:group,name:name}})
   }
 

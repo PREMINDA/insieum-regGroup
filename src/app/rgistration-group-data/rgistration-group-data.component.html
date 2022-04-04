@@ -1,9 +1,10 @@
 <div class="container">
+  <h2>REGISTRATION GROUP</h2>
   <button mat-raised-button
 color="primary"
 type="submit" routerLink="/registration-group/form">form</button>
 <div *ngFor="let data of dataSet.data" class="data-cintainer">
-  <app-list-item [group]="data.registrationGroupNumber" [name]="data.registrationGroupName" (startReLoadData)="onClick(data.id,data.registrationGroupNumber,data.registrationGroupName)"></app-list-item>
+  <app-list-item [group]="data.registrationGroupNumber" [name]="data.registrationGroupName" (editData)="onClick(data.id,data.registrationGroupNumber,data.registrationGroupName)"></app-list-item>
 </div>
 </div>
 

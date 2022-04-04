@@ -27,13 +27,13 @@ export class RegistrationFormComponent implements OnInit {
     });
   }
 
-  async onSubmit(){
+  onSubmit(){
 
     if(this.form.status==='VALID'){
 
       try{
-       await this.regData.saveData(this.form.value);
-       this.router.navigate(['registration-group/data'])
+       this.regData.saveData(this.form.value);
+       this.router.navigate(['registration-group'])
       }
       catch(e){
         console.log(e);

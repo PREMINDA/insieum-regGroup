@@ -20,8 +20,6 @@ export class RegistrationGroupEditComponent implements OnInit {
       registrationGroupNumber:[`${history.state.group}`,[Validators.required]],
       registrationGroupName:[`${history.state.name}`,[Validators.required]]
     });
-
-    console.log(this.form)
   }
 
   get idNumber(){
@@ -33,8 +31,8 @@ export class RegistrationGroupEditComponent implements OnInit {
     if(this.form.status==='VALID'){
 
       try{
-        this.regData.editData(this.form.value,this.idNumber?.value);
-       // this.router.navigate(['registration-group/data'])
+        await this.regData.editData(this.form.value,this.idNumber?.value);
+        //this.router.navigate(['registration-group'])
       }
       catch(e){
         console.log(e);

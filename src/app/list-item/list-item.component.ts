@@ -9,7 +9,7 @@ export class ListItemComponent implements OnInit {
 
   @Input() name!:string;
   @Input() group!:string;
-  @Output() startReLoadData: EventEmitter<any> = new EventEmitter<any>();
+  @Output() editData: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class ListItemComponent implements OnInit {
   }
 
   onClick(){
-    this.startReLoadData.emit();
+    this.editData.emit();
   }
 
 }

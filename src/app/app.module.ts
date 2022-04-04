@@ -6,39 +6,19 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HomePageComponent } from './home-page/home-page.component';
-import { RegistrationGroupPageComponent } from './registration-group-page/registration-group-page.component';
-import { RegistrationFormComponent } from './registration-form/registration-form.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RgistrationGroupDataComponent } from './rgistration-group-data/rgistration-group-data.component';
-import { RegistrationGroupEditComponent } from './registration-group-edit/registration-group-edit.component';
-import { ListItemComponent } from './list-item/list-item.component';
-import { FromComponent } from './from/from.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    RegistrationGroupPageComponent,
-    RegistrationFormComponent,
-    RgistrationGroupDataComponent,
-    RgistrationGroupDataComponent,
-    RegistrationGroupEditComponent,
-    RegistrationGroupEditComponent,
-    ListItemComponent,
-    FromComponent
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule
-
-
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
