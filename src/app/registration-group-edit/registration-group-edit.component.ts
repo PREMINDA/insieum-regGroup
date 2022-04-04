@@ -28,15 +28,6 @@ export class RegistrationGroupEditComponent implements OnInit {
     return this.form.get('id')
   }
 
-  get registrationGroupNumber(){
-    return this.form.get('registrationGroupNumber')
-  }
-
-
-  get registrationGroupName(){
-    return this.form.get('registrationGroupName')
-  }
-
  async onSubmit(){
 
     if(this.form.status==='VALID'){

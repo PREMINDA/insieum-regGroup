@@ -4,13 +4,6 @@ color="primary"
 type="submit" routerLink="/registration-group/form">form</button>
 <div *ngFor="let data of dataSet.data" class="data-cintainer">
   <app-list-item [group]="data.registrationGroupNumber" [name]="data.registrationGroupName" (startReLoadData)="onClick(data.id,data.registrationGroupNumber,data.registrationGroupName)"></app-list-item>
-  <!-- <mat-card class="example-card" (click)="onClick(data.id,data.registrationGroupNumber,data.registrationGroupName)">
-    <mat-card-header>
-      <i mat-card-avatar class="material-icons">group</i>
-      <mat-card-title>{{data.registrationGroupNumber}}</mat-card-title>
-      <mat-card-subtitle>{{data.registrationGroupName}}</mat-card-subtitle>
-    </mat-card-header>
-  </mat-card> -->
 </div>
 </div>
 

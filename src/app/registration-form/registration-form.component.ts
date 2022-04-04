@@ -27,15 +27,6 @@ export class RegistrationFormComponent implements OnInit {
     });
   }
 
-  get registrationGroupNumber(){
-    return this.form.get('registrationGroupNumber')
-  }
-
-
-  get registrationGroupName(){
-    return this.form.get('registrationGroupName')
-  }
-
   async onSubmit(){
 
     if(this.form.status==='VALID'){

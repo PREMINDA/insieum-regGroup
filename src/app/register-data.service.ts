@@ -10,13 +10,11 @@ export class RegisterDataService {
   saveData(data:any){
     console.log(data);
     this.http.post(this.url,data).subscribe((result)=>{
-      console.warn(result);
     })
   }
   editData(data:any,id:string){
     console.log(data);
     this.http.put(this.url+`/${id}`,data).subscribe((result)=>{
-      console.warn(result);
     })
   }
 }
