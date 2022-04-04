@@ -25,7 +25,7 @@ export class RegistrationGroupEditComponent implements OnInit {
   }
 
   get idNumber(){
-    return this.form.get('registrationGroupNumber')
+    return this.form.get('id')
   }
 
   get registrationGroupNumber(){
@@ -37,13 +37,13 @@ export class RegistrationGroupEditComponent implements OnInit {
     return this.form.get('registrationGroupName')
   }
 
-  async onSubmit(){
+ async onSubmit(){
 
     if(this.form.status==='VALID'){
 
       try{
-       await this.regData.editData(this.form.value,this.idNumber?.value);
-       this.router.navigate(['registration-group/data'])
+        this.regData.editData(this.form.value,this.idNumber?.value);
+       // this.router.navigate(['registration-group/data'])
       }
       catch(e){
         console.log(e);

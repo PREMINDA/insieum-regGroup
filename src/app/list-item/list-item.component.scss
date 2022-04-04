@@ -1,0 +1,17 @@
+
+  mat-card{
+    width: 95%;
+    margin: 3px auto;
+    height: 40px;
+    transition: transform .2s;
+
+    &:hover{
+      transform: scale(1.02);
+    }
+
+    mat-card-header{
+      justify-self: center;
+      align-items: center;
+    }
+
+  }

@@ -12,6 +12,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RgistrationGroupDataComponent } from './rgistration-group-data/rgistration-group-data.component';
 import { RegistrationGroupEditComponent } from './registration-group-edit/registration-group-edit.component';
+import { ListItemComponent } from './list-item/list-item.component';
+import { FromComponent } from './from/from.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { RegistrationGroupEditComponent } from './registration-group-edit/regist
     RgistrationGroupDataComponent,
     RgistrationGroupDataComponent,
     RegistrationGroupEditComponent,
-    RegistrationGroupEditComponent
+    RegistrationGroupEditComponent,
+    ListItemComponent,
+    FromComponent
 
   ],
   imports: [
